@@ -13,7 +13,17 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-
+ 
+ <style>
+ .nav-link{
+ 	color:white;
+ }
+ 
+ .nav-link:hover{
+ 	color:gray;
+ }
+ </style>
+ 
 </head>
 <body>
 
@@ -24,10 +34,10 @@
 				<!-- a태그의 이동페이지 주소는 해당 페이지의 제작자가 입력 요망 -->
 				<ul
 					class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-					<li><a th:href="@{/}" class="nav-link px-2 text-white">홈</a></li>
-					<li><a href="#" class="nav-link px-2 text-white">학습코스</a></li>
-					<li><a href="#" class="nav-link px-2 text-white">랭킹</a></li>
-					<li><a href="#" class="nav-link px-2 text-white">게시판</a></li>
+					<li><a th:href="@{/}" class="nav-link">홈</a></li>
+					<li><a href="#" class="nav-link">학습코스</a></li>
+					<li><a href="#" class="nav-link">랭킹</a></li>
+					<li><a href="#" class="nav-link">게시판</a></li>
 				</ul>
 				
 				<div class="dropdown text-end">
