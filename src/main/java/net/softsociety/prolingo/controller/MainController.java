@@ -18,4 +18,9 @@ public class MainController {
 	public String courseTest() {
 		return "courseTest";
 	}
+	
+	@GetMapping("header")
+	public String header() {
+		return "header";
+	}
 }

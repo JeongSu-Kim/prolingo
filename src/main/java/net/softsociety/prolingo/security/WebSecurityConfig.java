@@ -25,8 +25,10 @@ public class WebSecurityConfig {
         http.csrf().disable()
         .authorizeRequests()
         .antMatchers("/", //여기 다 수정해야함
+        		"/header",
         		"/courseTest",
                 "/images/**",
+                "/css/**",
                 "/styles/**",
                 "/scripts/**").permitAll()		//설정한 리소스의 접근을 인증절차 없이 허용
         .anyRequest().authenticated()   	//위의 경로 외에는 모두 로그인을 해야 함
