@@ -27,6 +27,7 @@ public class WebSecurityConfig {
         .antMatchers("/", //여기 다 수정해야함
         		"/**", //임시
         		"/header",
+        		"/signUp",
         		"/courseTest",
                 "/images/**",
                 "/css/**",
