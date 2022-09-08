@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.nav-link{
+ 	color:white;
+ }
+ .nav-link:hover{
+ 	color:gray;
+ }
+ .p-3{
+ 	background-color:MidnightBlue;
+ }
+.icon{
+	width: 30px;
+	height: 30px;
+}
