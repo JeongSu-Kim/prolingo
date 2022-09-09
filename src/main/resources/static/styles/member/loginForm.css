@@ -1,0 +1,82 @@
+@charset "UTF-8";
+html,
+body {
+  height: 100%;
+}
+
+/*푸터 때문에 변경, flex에 대한 공부 필요*/
+#content_body {
+/*   display: flex; */
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+	text-align: center;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+/*안에거 좌측정렬 하려고*/
+.form-floating{
+	text-align: left;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 2px;
+/*   border-bottom-right-radius: 0; */
+/*   border-bottom-left-radius: 0; */
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 2px;
+/*   border-top-left-radius: 0; */
+/*   border-top-right-radius: 0; */
+}
+
+.errorMesage{
+	text-align: right;
+	color: red;
+	font-style: italic;
+}
+
+.btn-lg{
+	/*버튼 색상*/
+	background-color:MidnightBlue;
+}
+
+.findPassward{
+	font-size: 12px;
+	color: gray;
+}
+
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 12px;
+	margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+/* 	margin: 0px 16px; */
+}

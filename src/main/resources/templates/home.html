@@ -15,11 +15,12 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <script type="text/javascript" th:src="@{/scripts/home.js}"></script>
 </head>
 <body>
-	<div th:replace="fragments/header :: topmenu"></div>
+	<!-- 홈 화면, 회원가입, 로그인 등등에는 상단바가 없...나? -->
+	<!-- <div th:replace="fragments/header :: topmenu"></div> -->
 	<h1>홈 화면</h1>
 	
 	<p>테스트</p>
-	<a href="/prolingo/templates/header.html">이동</a>
+	<a th:href="@{/test}">링크 테스트</a>
 	
 	<div th:replace="fragments/footer :: copy"></div>
 </body>

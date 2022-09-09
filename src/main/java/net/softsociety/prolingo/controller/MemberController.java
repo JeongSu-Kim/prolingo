@@ -19,6 +19,6 @@ public class MemberController {
 		
 		log.debug("만들어야함");
 		
-		return "loginForm";
+		return "memberView/loginForm";
 	}
 }
