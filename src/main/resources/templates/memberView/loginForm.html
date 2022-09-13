@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="fragments/base :: common_header(~{::title},~{::link},~{::script})">
+<!-- 타이틀 입력 -->
+<title>Login</title>
+<!-- 추가되는 링크 입력, 없더라도 link 빈거 하나는 있어야 하는듯? -->
+<link>
+<link rel="stylesheet" th:href="@{/styles/member/loginForm.css}">
+<!-- 추가되는 스크립트 입력, 역시 없더라도 빈거 하나는 있어야 하는듯? -->
+<script type="text/javascript" th:src="@{/scripts/member/loginForm.js}"></script>
+</head>
+<body>
+		
+	<div id="content_body"> 
+	<form class="form-signin">
+    <img class="mb-4" th:src="@{/images/logo1.png}" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 fw-normal">로그인</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="errorMesage">
+    	<span id="errorEmail">이메일 에러 메세지</span>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="errorMesage">
+    	<span id="errorPassword">비밀번호 에러 메세지</span>
+    </div>
+
+<!--     <div class="checkbox mb-3"> -->
+<!--       <label> -->
+<!--         <input type="checkbox" value="remember-me"> Remember me -->
+<!--       </label> -->
+<!--     </div> -->
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <div class="errorMesage">
+    	<span id="errorLogin">로그인 에러 메세지</span>
+    </div>
+  	</form>
+  
+	
+		<div class="form-signin">
+			<label class="findPassward">비밀번호를 잊으셨다면 <a th:href="@{/test}">이쪽</a>으로</label>
+			<!-- 인터넷에서 긁어온 것, css에 설정해놔서 절취선? 안에 텍스트 넣을 수 있음 -->
+			<div class="hr-sect">또는</div>
+			<div>외부 로그인 부분, 그리고 스크립트 미완</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div th:replace="fragments/footer :: copy"></div>
+</body>
+</html>

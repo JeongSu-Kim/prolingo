@@ -29,6 +29,5 @@ public class MainController {
 	public String signUp() {
 		log.debug("signUp called");
 		return "signUp";
-
 	}
 }
