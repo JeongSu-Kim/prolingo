@@ -19,14 +19,7 @@ public class MainController {
 	public String courseTest() {
 		return "courseTest";
 	}
-	
-	@GetMapping("signUp")
-	public String signUp() {
-		log.debug("signUp called");
-		return "signUp";
-	}
-
-	
+		
 	@GetMapping("header")
 	public String header() {
 		return "header";

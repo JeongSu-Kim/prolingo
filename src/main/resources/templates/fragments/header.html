@@ -21,6 +21,60 @@
 					<li class="nav-item"><a class="nav-link"
 						href="">커뮤니티</a></li>
 				</ul>
+				<ul>
+					<div class="container mt-3">
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+						data-bs-target="#myModal">회원가입</button>
+					</div>
+					
+					<!-- The Modal -->
+					<div class="modal" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">회원가입</h4>
+				</div>
+
+				<!-- Modal body -->
+				<div class="container mt-3">  
+				  <form action="join" method="post" class="was-validated" id="signUpForm">
+				    <div class="mb-3 mt-3">
+						<input type="text" class="form-control" id="m_name" placeholder="이름" name="m_name" required>
+						<div class="valid-feedback">확인.</div>
+						<div class="invalid-feedback">이름을 입력해주세요.</div>
+			    	</div>
+					<div class="mb-3">
+				      <input type="email" class="form-control" id="m_mail" placeholder="이메일" name="m_mail" required>
+				      <div class="valid-feedback">확인.</div>
+				      <div class="invalid-feedback">이메일을 입력해주세요.</div>
+				 	</div>
+					<div class="mb-3">
+				      <input type="password" class="form-control" id="m_pw" placeholder="비밀번호" name="m_pw" required>
+				      <div class="valid-feedback">확인.</div>
+				      <div class="invalid-feedback">비밀번호를 입력해주세요.</div>
+				    </div>
+				    <div class="mb-3">
+				      <input type="text" class="form-control" id="m_age" placeholder="나이" name="m_age" required>
+				      <div class="valid-feedback">확인.</div>
+				      <div class="invalid-feedback">나이를 입력해주세요	.</div>
+				    </div> 
+				  </form>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" 
+						data-bs-dismiss="modal" id="signUpBtn" sec:authorize="not isAuthenticated()">회원가입</button>
+					<button type="button" class="btn btn-danger"
+						data-bs-dismiss="modal">닫기</button>
+				</div> 				
+			</div>
+		</div>
+	</div>
+					<li sec:authorize="not isAuthenticated()"><a th:href="@{/member/login}">로그인</a></li>
+					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">로그아웃</a></li>
+					<li sec:authorize="isAuthenticated()"><a th:href="@{/member/mypage}">개인정보 수정</a></li>				</ul>
 				<form class="d-flex">
 					<input class="form-control me-2" type="text" placeholder="Search">
 					<button class="btn btn-primary" type="button">Search</button>
