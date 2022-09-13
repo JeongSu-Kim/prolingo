@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>timeline</title>
+
+<script th:src="@{/scripts/jquery-3.6.0.js}"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- 업적 데이터를 ajax로 출력하기 위한 경로 -->
+<script th:src="@{/scripts/timeline.js}"></script>
+
+</head>
+<body>
+	
+	<!-- 데이터 입력 후 테스트 필요 -->
+	<div class="list-group w-auto" id="output"></div>
+	
+</body>
+</html>

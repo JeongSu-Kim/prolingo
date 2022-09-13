@@ -25,10 +25,16 @@ public class WebSecurityConfig {
         http.csrf().disable()
         .authorizeRequests()
         .antMatchers("/", //여기 다 수정해야함
+
+        		"/signUp",
+        		"/**", //임시
+        		"/header",
+
         		"/**", //임시
         		"/member/loginForm",
         		"/header",
         		"/signUp",
+
         		"/courseTest",
                 "/images/**",
                 "/css/**",

@@ -20,14 +20,16 @@ public class MainController {
 		return "courseTest";
 	}
 	
-	@GetMapping("header")
-	public String header() {
-		return "header";
-	}
-	
 	@GetMapping("signUp")
 	public String signUp() {
 		log.debug("signUp called");
 		return "signUp";
+
+	}
+
+	
+	@GetMapping("header")
+	public String header() {
+		return "header";
 	}
 }
