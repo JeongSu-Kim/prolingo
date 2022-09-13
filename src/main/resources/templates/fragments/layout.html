@@ -1,0 +1,23 @@
+<!-- 이 파일은 수정하지 말것 -->
+<!-- 이 아래로 복사 붙여넣기 해서 쓸 것 -->
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="fragments/base :: common_header(~{::title},~{::link},~{::script})">
+<!-- 타이틀 입력 -->
+<title>insert title</title>
+ <!-- 추가되는 링크 입력, 없더라도 link 빈거 하나는 있어야 하는듯? -->
+<link>
+ <!-- 추가되는 스크립트 입력, 역시 없더라도 빈거 하나는 있어야 하는듯? -->
+<script type="text/javascript" th:src="@{/scripts/home.js}"></script>
+</head>
+<body>
+	<!-- header -->
+	<div th:replace="fragments/header :: topmenu"></div>
+	
+	<div> 내용 </div>
+	
+	<!-- footer -->
+	<div th:replace="fragments/footer :: copy"></div>
+</body>
+</html>

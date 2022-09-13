@@ -12,10 +12,10 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("test")
 public class MainController {
 	
-	@GetMapping({"","/"})
-	public String main() {
-		return "main";
-	}
+//	@GetMapping({"","/"})
+//	public String main() {
+//		return "main";
+//	}
 	
 	@GetMapping("courseTest")
 	public String courseTest() {

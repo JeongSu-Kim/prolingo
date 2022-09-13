@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="ko" xmlns:th="http://thymeleaf.org"
 xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:replace="fragments/base :: common_header(~{::title},~{::link},~{::script})">
@@ -20,6 +21,72 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 			<h1 class="course-title">Java 입문편</h1>
 			<p class="course-text">자바 입문을 위한 단계</p>
 >>>>>>> parent of e9f1b0a (Revert "학습코스 페이지")
+=======
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>courseTestPage</title>
+
+<script th:src="@{/scripts/jquery-3.6.0.js}"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+.card{
+	text-align:center;
+}
+
+.card-text{
+	font-size:15px;
+}
+
+</style>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<div class="container-fluid">
+			<img th:src="@{/images/logo1.png}" alt="logotest1" id="logoTest1">
+			<a class="navbar-brand" th:href="@{/}">&nbsp;&nbsp;Prolingo</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#mynavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mynavbar">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/courseTest}">코스</a></li>
+					<li class="nav-item"><a class="nav-link" href="">소셜</a></li>
+					<li class="nav-item"><a class="nav-link" href="">커뮤니티</a></li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="text" placeholder="Search">
+					<button class="btn btn-primary" type="button">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<br>
+	<div class="card" style="width: 250px">
+		<img class="card-img-top" th:src="@{/images/java.png}" alt="Card image">
+		<div class="card-body">
+			<h4 class="card-title">자바교육 과정</h4>
+			<p class="card-text">자바는 썬 마이크로시스템즈의 제임스 고슬링이 개발한 객체 지향적 프로그래밍
+				언어이다.</p>
+>>>>>>> kim
 			<a href="#" class="btn btn-primary">교육과정으로 이동</a>
 		</div>
 		<div class="course-body-rigth" style="width: 250px">
@@ -68,7 +135,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 				Modal body
 				<div class="modal-body">
-					<img th:src="@{/img/otter.jpg}" alt="수달" id="logoTest1">
+					<img th:src="@{/images/otter.jpg}" alt="수달" id="logoTest1">
 					<p>모달에 사진 넣어보기 테스트</p>
 				</div>
 
