@@ -27,10 +27,10 @@
 						data-bs-target="#myModal">회원가입</button>
 					</div>
 					
-					<!-- The Modal -->
-					<div class="modal" id="myModal">
-						<div class="modal-dialog">
-							<div class="modal-content">
+				<!-- The Modal -->
+				<div class="modal" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
 
 				<!-- Modal Header -->
 				<div class="modal-header">
@@ -68,10 +68,10 @@
 						data-bs-dismiss="modal" id="signUpBtn" sec:authorize="not isAuthenticated()">회원가입</button>
 					<button type="button" class="btn btn-danger"
 						data-bs-dismiss="modal">닫기</button>
-				</div> 				
-			</div>
-		</div>
-	</div>
+							</div> 				
+						</div>
+					</div>
+				</div>
 					<li sec:authorize="not isAuthenticated()"><a th:href="@{/member/login}">로그인</a></li>
 					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">로그아웃</a></li>
 					<li sec:authorize="isAuthenticated()"><a th:href="@{/member/mypage}">개인정보 수정</a></li>				</ul>
