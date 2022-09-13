@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -20,5 +21,11 @@ public class MainController {
 	@GetMapping("courseTest")
 	public String courseTest() {
 		return "courseTest";
+	}
+		
+	@GetMapping("header")
+	public String header() {
+		return "header";
+
 	}
 }
