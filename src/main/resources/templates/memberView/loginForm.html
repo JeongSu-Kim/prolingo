@@ -11,9 +11,9 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <script type="text/javascript" th:src="@{/scripts/member/loginForm.js}"></script>
 </head>
 <body>
-		
+	
 	<div id="content_body"> 
-	<form class="form-signin">
+	<form class="form-signin" id="loginForm">
     <img class="mb-4" th:src="@{/images/logo1.png}" alt="" width="72" height="72">
     <h1 class="h3 mb-3 fw-normal">로그인</h1>
 
@@ -37,7 +37,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <!--         <input type="checkbox" value="remember-me"> Remember me -->
 <!--       </label> -->
 <!--     </div> -->
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <button class="w-100 btn btn-lg btn-primary" type="button" id="loginbtn">Sign in</button>
     <div class="errorMesage">
     	<span id="errorLogin">로그인 에러 메세지</span>
     </div>
