@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Compiler Test</title>
+<script type="text/javascript" th:src="@{/scripts/jquery-3.6.0.js}"></script>
+<script type="text/javascript" th:src="@{/scripts/compiler.js}"></script>
+<style>
+	textarea{
+		width: 80%;
+		height: 280px;
+		padding: 4px;
+		box-sizing: border-box;
+		border: solid 2px #1E90FF;
+		border-radius: 5px;
+		font-size: 16px;
+		resize: none;
+	}
+	#runbtn{
+		width: 80%;
+		height: 40px;
+		margin: 8px 0px;
+	}
+</style>
+</head>
+<body>
+	<h3>컴파일러 테스트</h3>
+	<div>	
+		<textarea id="editer"></textarea>
+	</div>
+		<input type="button" id="runbtn" value="run">
+	<div>
+		<textarea id="terminal"></textarea>
+	</div>
+</body>
+</html>
