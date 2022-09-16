@@ -10,7 +10,7 @@
 function languageSelect(){
 	if($(this).val() == 'java'){
 		$('#editer').val(
-			"class testjava{\n"
+			"class Testjava{\n"
 			+"\tpublic static void main(String[] args) {\n"
 			+"\t\tSystem.out.println(\"Hello World!\");\n"
 			+"\t}\n"

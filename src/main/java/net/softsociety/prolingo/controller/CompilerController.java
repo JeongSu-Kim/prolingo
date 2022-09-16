@@ -45,8 +45,8 @@ public class CompilerController {
 		String fullpath = "/Spring/workspaceBoot/prolingo/" + path;
 
 		if (language.equals("java")) {
-			String filename = "testcode.java";
-			String classname = "testjava";
+			String filename = "Testcode.java";
+			String classname = "Testjava";
 			
 			try {
 				OutputStream output = new FileOutputStream(path + filename);
