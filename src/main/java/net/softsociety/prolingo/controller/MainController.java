@@ -29,7 +29,6 @@ public class MainController {
 
 	}
 
-	
 	@GetMapping("header")
 	public String header() {
 		return "header";

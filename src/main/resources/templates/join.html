@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<script th:src="@{/scripts/jquery-3.6.0.js}"></script>
+<script th:src="@{/scripts/join.js}"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div class="container mt-3">
+		<h3>모달 예시창 띄우기</h3>
+		<p>이 이 버튼을 누르면 모달창이 나온다.</p>
+
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+			data-bs-target="#myModal">모달창 열기</button>
+	</div>
+	
+	
+	<!-- The Modal -->
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">회원가입</h4>
+				</div>
+
+				<!-- Modal body -->
+				<div class="container mt-3">  
+				  <form action="join" method="post" class="was-validated" id="signUpForm">
+				    <div class="mb-3 mt-3">
+				      <input type="text" class="form-control" id="m_name" placeholder="이름" name="m_name" required>
+				      <div class="valid-feedback">확인.</div>
+				      <div class="invalid-feedback">이름을 입력해주세요	.</div>
+				    </div>
+				    <div class="mb-3">
+				      <input type="email" class="form-control" id="m_mail" placeholder="이메일" name="m_mail" required>
+				      <div class="valid-feedback">확인.</div>
+				      <div class="invalid-feedback">이메일을 입력해주세요.</div>
+				    </div>
+				    <div class="mb-3">
+				      <input type="password" class="form-control" id="m_pw" placeholder="비밀번호" name="m_pw" required>
+				      <div class="valid-feedback">확인.</div>
+				      <div class="invalid-feedback">비밀번호를 입력해주세요.</div>
+				    </div>
+				    <div class="mb-3">
+				      <input type="text" class="form-control" id="m_age" placeholder="나이" name="m_age" required>
+				      <div class="valid-feedback">확인.</div>
+				      <div class="invalid-feedback">나이를 입력해주세요	.</div>
+				    </div> 
+				  </form>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" 
+						data-bs-dismiss="modal" id="signUpBtn">회원가입</button>
+					<button type="button" class="btn btn-danger"
+						data-bs-dismiss="modal">닫기</button>
+				</div> 				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

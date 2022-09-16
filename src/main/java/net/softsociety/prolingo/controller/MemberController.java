@@ -21,4 +21,10 @@ public class MemberController {
 		
 		return "memberView/loginForm";
 	}
+	
+	@GetMapping("join")
+	public String join() {
+		log.debug("join called");
+		return "join";
+	}
 }
